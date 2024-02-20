@@ -1,0 +1,39 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.banner {
+  background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/01/superman-nuevo-traje.jpg?tf=3840x');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 330px 0;
+  text-align: center;
+  line-height: 200px;
+  transition: filter 0.3s;
+}
+
+.banner:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.banner-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 48px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+  opacity: 0; /* Initially hide the hyperlink */
+}
+
+.banner-container:hover .banner-link {
+  opacity: 1;
+}
